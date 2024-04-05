@@ -15,3 +15,9 @@
   display: flex;
   gap: 40px;
 }
+
+@media (max-width: 551px) {
+  .socialNetworksTitle {
+    font-size: 30px;
+  }
+}

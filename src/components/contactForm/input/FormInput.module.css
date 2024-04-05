@@ -5,10 +5,14 @@ input {
   padding: 17px 0;
   margin-bottom: 30px;
   background-color: transparent;
-
   color: #21232d;
   font-family: "Red Hat Display";
   font-size: 20px;
+}
+@media screen and (max-width: 551px) {
+  input {
+    margin-bottom: 14px;
+  }
 }
 ::placeholder {
   color: #a8a0b0;
