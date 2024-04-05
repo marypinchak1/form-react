@@ -1,0 +1,28 @@
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #dad2e3;
+  padding: 17px 0;
+  margin-bottom: 30px;
+  background-color: transparent;
+
+  color: #21232d;
+  font-family: "Red Hat Display";
+  font-size: 20px;
+}
+::placeholder {
+  color: #a8a0b0;
+  font-family: "Red Hat Display";
+  font-size: 20px;
+}
+input:focus {
+  outline: none;
+}
+input:focus-visible {
+  outline: none;
+}
+::-ms-value {
+  color: #a8a0b0;
+  font-family: "Red Hat Display";
+  font-size: 20px;
+}

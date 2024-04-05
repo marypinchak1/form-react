@@ -1,0 +1,13 @@
+.socialNetworksIcon {
+  width: 50px;
+  height: 50px;
+  background: url(../../../../../public/Instagram.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}

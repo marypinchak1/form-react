@@ -1,0 +1,17 @@
+.btn {
+  padding: 18px 50px;
+  border: none;
+  border-radius: 100px;
+  background-color: #8643dc;
+  color: #fff;
+  font-family: "Red Hat Display";
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff87cb;
+  transition: 0.3s;
+}

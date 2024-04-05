@@ -1,0 +1,104 @@
+.contacts {
+  font-family: "Red Hat Display";
+  padding: 50px 0;
+  position: relative;
+}
+@media (min-width: 575.98px) {
+  .contacts {
+    max-width: 540px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .contacts {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .contacts {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1199.98px) {
+  .contacts {
+    max-width: 1140px;
+  }
+}
+.contactsBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(187, 133, 255, 0.17) -8.54%,
+    rgba(255, 244, 251, 0.2) 100%
+  );
+  filter: blur(75px);
+  z-index: -1;
+}
+.contactsTitle {
+  color: #8643dc;
+  font-size: 18px;
+  margin: 10px 0;
+}
+hr {
+  width: 50px;
+  height: 2px;
+  background: #8643dc;
+  border: none;
+  margin: 0;
+}
+
+.contactsLable {
+  width: 50%;
+  color: #21232d;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+}
+.contactsEmail {
+  width: 50%;
+  text-align: right;
+}
+.contactsEmail a {
+  color: #8643dc;
+  font-family: Roboto;
+  font-size: 24px;
+  text-decoration-line: underline;
+  text-transform: lowercase;
+  transition: 0.3s;
+}
+.contactsEmail a:hover {
+  color: #ff87cb;
+  transition: 0.3s;
+}
+.contactsInfo {
+  display: flex;
+  margin: 20px 0;
+}
+.contactsBtns {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 60px;
+}
+.contactsAttach {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.contactsAttach svg {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contactsAttach svg:hover path {
+  fill: #ff87cb;
+  transition: 0.3s;
+}
