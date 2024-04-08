@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import FormInput from "./input/FormInput";
 import FormButton from "./button/Button";
 import FileAttachment from "./fileAttachment/FileAttachment";
@@ -19,7 +20,7 @@ function ContactForm({ create, reject }) {
     formData.append("body", body);
 
     if (selectedFile) {
-      formData.append("selectedFile", selectedFile);
+      formData.append("attachment", selectedFile);
     }
 
     setUserName("");
@@ -34,13 +35,13 @@ function ContactForm({ create, reject }) {
 
     console.log(formDataObject);
 
-    // try {
-    //   await axios.post("/send-email", formData);
-    //   alert("Email sent successfully!");
-    // } catch (error) {
-    //   console.error("Error sending email:", error);
-    //   alert("Failed to send email. Please try again later.");
-    // }
+    try {
+      await axios.post("/send-email", formData);
+      alert("Email sent successfully!");
+    } catch (error) {
+      console.error("Error sending email:", error);
+      alert("Failed to send email. Please try again later.");
+    }
   };
 
   return (
